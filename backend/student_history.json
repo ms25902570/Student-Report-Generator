@@ -1,0 +1,12 @@
+[
+  {
+    "Student": "Kavishan (Anonymous ID: S001)",
+    "Syllabus": "Cambridge (IGCSE/AS/A-Level)",
+    "Subject": "IT",
+    "Lesson Date": "08 Oct 2026",
+    "Progress": "Covered HTML forms today.",
+    "Strengths": "Understood input types.",
+    "Areas for Improvement": "Needs practice with form validation.",
+    "Next Steps / Homework": "Homework: build a simple logging form.\nNext Lesson: PHP form handling."
+  }
+]

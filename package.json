@@ -1,0 +1,27 @@
+{
+  "name": "student-report-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Assisted Student Progress Report Generator",
+  "engines": {
+    "node": ">=24"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n backend,frontend -c green,blue \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:backend": "node --watch --env-file-if-exists=backend/.env backend/server.js",
+    "dev:frontend": "next dev",
+    "build": "next build",
+    "start": "concurrently -k -n backend,frontend -c green,blue \"npm:start:backend\" \"npm:start:frontend\"",
+    "start:backend": "node --env-file-if-exists=backend/.env backend/server.js",
+    "start:frontend": "next start"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.5",
+    "express": "^5.2.1",
+    "next": "^16.4.0",
+    "pg": "^8.23.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}
